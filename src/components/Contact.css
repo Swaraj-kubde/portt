@@ -1,0 +1,128 @@
+.contact-card {
+  position: relative;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-default);
+  padding: var(--space-2xl);
+  backdrop-filter: blur(8px);
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.channel-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-xl);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.channel-box:hover {
+  border-color: var(--border-default);
+}
+
+.channel-box.primary-channel {
+  border-color: var(--border-accent);
+  background-color: rgba(182, 243, 106, 0.02);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-md);
+}
+
+.channel-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #0E1318;
+  border: 1px solid var(--border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  border-radius: 2px;
+}
+
+.channel-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  display: block;
+}
+
+.channel-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.channel-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: var(--space-lg);
+  flex-grow: 1;
+}
+
+.channel-action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.copy-btn {
+  padding: 10px 16px;
+  min-height: 44px;
+  touch-action: manipulation;
+}
+
+.email-display {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.email-display code {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-accent);
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 860px) {
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: var(--space-lg);
+  }
+  .channel-box {
+    padding: var(--space-lg);
+  }
+  .channel-action-row .btn-primary,
+  .channel-action-row .btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-card {
+    padding: var(--space-md);
+  }
+  .channel-box {
+    padding: var(--space-md);
+  }
+}
+

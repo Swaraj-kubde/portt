@@ -1,0 +1,253 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.about-bio-column,
+.about-academics-column {
+  position: relative;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-default);
+  padding: var(--space-2xl);
+  backdrop-filter: blur(8px);
+}
+
+.bio-heading {
+  font-size: 1.65rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.25;
+}
+
+.bio-paragraph {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+}
+
+.bio-paragraph strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+
+
+/* Academics Column */
+.degree-header {
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: var(--space-md);
+}
+
+.degree-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-accent);
+  letter-spacing: 0.06em;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.degree-title {
+  font-size: 1.55rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.degree-discipline {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.institution-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: var(--space-xl);
+}
+
+.institution-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.inst-label {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  min-width: 90px;
+}
+
+.inst-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Academic Performance Section */
+.academic-performance-section {
+  margin-bottom: var(--space-xl);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-lg);
+  border-radius: 2px;
+}
+
+.perf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--border-subtle);
+  padding-bottom: 8px;
+}
+
+.perf-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-accent);
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+
+
+.year-scores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: var(--space-sm);
+}
+
+.year-score-card {
+  background-color: #0E1318;
+  border: 1px solid var(--border-default);
+  border-top: 2px solid var(--accent-primary);
+  padding: 12px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-fast);
+}
+
+.year-score-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-1px);
+}
+
+.year-score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.year-code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.year-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.year-score-value {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.year-score-note {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.performance-disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-top: 8px;
+}
+
+/* Coursework */
+.coursework-box {
+  border-top: 1px dashed var(--border-subtle);
+  padding-top: var(--space-md);
+}
+
+.coursework-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-bio-column,
+  .about-academics-column {
+    padding: var(--space-lg);
+  }
+  .academic-performance-section {
+    padding: var(--space-md);
+  }
+  .year-scores-grid {
+    gap: 8px;
+  }
+  .year-score-card {
+    padding: 8px 6px;
+    text-align: center;
+  }
+  .year-score-header {
+    justify-content: center;
+    gap: 4px;
+  }
+  .year-score-value {
+    font-size: 1.45rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-bio-column,
+  .about-academics-column {
+    padding: var(--space-md);
+  }
+  .year-scores-grid {
+    grid-template-columns: 1fr;
+  }
+  .year-score-card {
+    text-align: left;
+    padding: 10px 12px;
+  }
+  .year-score-header {
+    justify-content: space-between;
+  }
+}
+
+
