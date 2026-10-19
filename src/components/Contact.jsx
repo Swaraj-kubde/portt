@@ -25,7 +25,7 @@ export default function Contact({ onOpenResume }) {
           </div>
           <h2 className="section-title">Direct Contact & Channels</h2>
           <p className="section-subtitle">
-            Open to technical discussions regarding embedded engineering, robotics, intelligent systems, and collaborative engineering projects.
+            Open to technical discussions regarding robotics, embedded systems, and engineering opportunities.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function Contact({ onOpenResume }) {
               </div>
 
               <p className="channel-desc">
-                Fastest way to reach me for technical inquiries, research collaboration, or engineering opportunities.
+                Direct channel for technical discussions, research collaboration, or engineering opportunities.
               </p>
 
               <div className="channel-action-row">
@@ -90,7 +90,7 @@ export default function Contact({ onOpenResume }) {
               </div>
 
               <p className="channel-desc">
-                Connect for professional updates, project milestones, and engineering networking.
+                Professional updates, engineering networking, and project milestones.
               </p>
 
               <div className="channel-action-row">
@@ -121,7 +121,7 @@ export default function Contact({ onOpenResume }) {
               </div>
 
               <p className="channel-desc">
-                Explore autonomous robotics software, embedded companion computer code, and public repositories.
+                Source code for robotics experiments, companion computer code, and public repositories.
               </p>
 
               <div className="channel-action-row">
@@ -152,7 +152,7 @@ export default function Contact({ onOpenResume }) {
               </div>
 
               <p className="channel-desc">
-                Comprehensive technical resume outlining engineering projects, embedded systems experience, and academic standing.
+                Verified academic records, robotics projects, and embedded engineering experience.
               </p>
 
               <div className="channel-action-row">

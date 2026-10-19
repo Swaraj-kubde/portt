@@ -8,11 +8,10 @@ export const SKILL_CATEGORIES = [
     title: 'UAV & Flight Systems',
     icon: Compass,
     skills: [
-      { name: 'ArduPilot Platform', level: 'Configuration & Bench Testing' },
-      { name: 'Mission Planner / QGC', level: 'Telemetry & Parameter Tuning' },
-      { name: 'MAVLink Protocol', level: 'Telemetry & Message Handling' },
-      { name: 'Multirotor Airframe Assembly', level: 'Mechanical Build & Wiring' },
-      { name: 'ESC Calibration & Power Setup', level: 'Bench Verified' }
+      { name: 'ArduPilot Platform', level: 'Configuration & Parameters' },
+      { name: 'Mission Planner / QGC', level: 'Calibration & Telemetry' },
+      { name: 'Multirotor Assembly', level: 'Airframe & Harness Wiring' },
+      { name: 'ESC Calibration', level: 'Bench Spin & Power Setup' }
     ]
   },
   {
@@ -20,10 +19,10 @@ export const SKILL_CATEGORIES = [
     title: 'Embedded Systems & Hardware',
     icon: Cpu,
     skills: [
-      { name: 'Raspberry Pi', level: 'Companion Computer Setup' },
-      { name: 'Arduino Platforms', level: 'Microcontroller Interfacing' },
-      { name: 'Sensor Interfacing', level: 'LiDAR, MPU6050 IMU, Distance Sensors' },
-      { name: 'GPIO & Hardware Wiring', level: 'Bench Prototyping & Soldering' }
+      { name: 'Raspberry Pi', level: 'Companion Computer Linux' },
+      { name: 'Arduino Platforms', level: 'Embedded Microcontrollers' },
+      { name: 'Sensor Interfacing', level: 'LiDAR, MPU6050, Ultrasonic' },
+      { name: 'Hardware Prototyping', level: 'Bench Wiring & Soldering' }
     ]
   },
   {
@@ -31,8 +30,8 @@ export const SKILL_CATEGORIES = [
     title: 'Programming Languages',
     icon: Terminal,
     skills: [
-      { name: 'Python', level: 'Hardware Scripts, OpenCV & Telemetry' },
-      { name: 'C / Embedded C', level: 'Microcontroller Firmware Logic' }
+      { name: 'Python', level: 'OpenCV, Hardware & Telemetry' },
+      { name: 'C / Embedded C', level: 'Firmware & Logic Control' }
     ]
   },
   {
@@ -40,10 +39,10 @@ export const SKILL_CATEGORIES = [
     title: 'Communication Protocols',
     icon: Radio,
     skills: [
-      { name: 'MAVLink', level: 'UAV Telemetry & Flight Packets' },
-      { name: 'UART / Serial', level: 'Sensor & Telemetry Streaming' },
-      { name: 'I2C Bus', level: 'Sensor Data Exchange' },
-      { name: 'Telemetry Radios', level: 'Transceiver Serial Link' }
+      { name: 'MAVLink Protocol', level: 'Telemetry & Flight Messages' },
+      { name: 'UART / Serial', level: 'Sensor & Data Streaming' },
+      { name: 'I2C Bus', level: 'Onboard Sensor Communication' },
+      { name: 'Telemetry Radios', level: 'Transceiver Serial Links' }
     ]
   },
   {
@@ -51,9 +50,9 @@ export const SKILL_CATEGORIES = [
     title: 'Computer Vision',
     icon: Eye,
     skills: [
-      { name: 'OpenCV with Python', level: 'Video Capture & Image Filtering' },
-      { name: 'Image Processing Basics', level: 'Thresholding & Contours' },
-      { name: 'Camera Stream Interfacing', level: 'USB / CSI Camera Inputs' }
+      { name: 'OpenCV with Python', level: 'Image Filtering & Contours' },
+      { name: 'Object Tracking', level: 'Feature Detection Pipelines' },
+      { name: 'Camera Interfacing', level: 'USB & CSI Video Feeds' }
     ]
   },
   {
@@ -61,10 +60,10 @@ export const SKILL_CATEGORIES = [
     title: 'Linux & Laboratory Tools',
     icon: Wrench,
     skills: [
-      { name: 'Basic Linux CLI', level: 'Navigation & Service Execution' },
-      { name: 'Digital Multimeter', level: 'Voltage, Current & Continuity' },
-      { name: 'Hardware Soldering', level: 'Harness Wiring & Rework' },
-      { name: 'Git Basics', level: 'Repository Management' }
+      { name: 'Linux CLI', level: 'Embedded Command Line' },
+      { name: 'Digital Multimeter', level: 'Electrical Diagnostics' },
+      { name: 'Hardware Soldering', level: 'Wiring & Cable Harnesses' },
+      { name: 'Git & GitHub', level: 'Version Control Workflows' }
     ]
   }
 ];
@@ -73,19 +72,19 @@ export const CURRENTLY_LEARNING = [
   {
     title: 'ROS 2 (Robot Operating System)',
     status: 'In Progress (Self-Study)',
-    focus: 'Studying nodes, topics, publishers/subscribers, and micro-ROS concepts for robotic systems integration.',
+    focus: 'Nodes, topics, publishers/subscribers, and micro-ROS concepts for robotic systems.',
     badge: 'ACTIVE LEARNING'
   },
   {
     title: 'Deep Learning for Edge Robotics',
     status: 'In Progress (Foundations)',
-    focus: 'Learning neural network basics and lightweight computer vision architectures suitable for edge devices.',
+    focus: 'Neural network foundations and lightweight computer vision models for edge devices.',
     badge: 'ACTIVE LEARNING'
   },
   {
     title: 'Autodesk Fusion 360',
     status: 'In Progress (CAD Foundations)',
-    focus: 'Learning parametric 3D modeling for custom brackets, drone mount plates, and 3D print prototyping.',
+    focus: 'Parametric 3D CAD modeling for custom robotic brackets and 3D prototyping.',
     badge: 'ACTIVE LEARNING'
   }
 ];
@@ -102,7 +101,7 @@ export default function Skills() {
           </div>
           <h2 className="section-title">Technical Skills & Lab Competencies</h2>
           <p className="section-subtitle">
-            Grounded capabilities across drone hardware, microcontrollers, sensor interfacing, and active learning areas. Accurately documented without inflated percentage bars or unsupported claims.
+            Demonstrated competencies across embedded hardware, robotics, protocols, and active learning areas.
           </p>
         </div>
 
@@ -152,7 +151,7 @@ export default function Skills() {
             </div>
             <h3 className="learning-title">Active Studies & Ongoing Learning</h3>
             <p className="learning-note">
-              In the spirit of technical accuracy, these areas represent active coursework, self-study, and personal experimentation rather than production mastery.
+              Active self-study, coursework, and emerging technical experiments.
             </p>
           </div>
 

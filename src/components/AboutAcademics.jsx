@@ -20,7 +20,7 @@ export default function AboutAcademics() {
           </div>
           <h2 className="section-title">About Me & Academic Foundation</h2>
           <p className="section-subtitle">
-            Electronics and Telecommunication Engineering student committed to rigorous engineering fundamentals, sensor integration, and practical robotics development.
+            Electronics and Telecommunication Engineering student focused on embedded systems, robotics, and intelligent systems development.
           </p>
         </div>
 
@@ -37,11 +37,7 @@ export default function AboutAcademics() {
             </p>
 
             <p className="bio-paragraph">
-              My engineering approach combines hands-on experimentation with software development, hardware integration, and systematic testing. I enjoy building and validating practical solutions across robotics, embedded systems, computer vision, and AI, from sensor-level experimentation to intelligent system integration.
-            </p>
-
-            <p className="bio-paragraph">
-              Whether integrating LiDAR ranging hardware for proximity detection or setting up closed-loop feedback control on robotic rigs, I prioritize disciplined bench testing, honest documentation, and real-world system reliability.
+              My engineering approach combines hands-on prototyping with systematic software and hardware testing. I build practical solutions across robotics, embedded computing, and computer vision—prioritizing disciplined validation and reliability from sensor interfacing to system-level integration.
             </p>
           </div>
 
@@ -63,11 +59,11 @@ export default function AboutAcademics() {
               </div>
               <div className="institution-row">
                 <span className="inst-label">TIMELINE:</span>
-                <span className="inst-value">2023 – 2027 (Undergraduate)</span>
+                <span className="inst-value">2023 – 2027</span>
               </div>
               <div className="institution-row">
                 <span className="inst-label">AFFILIATION:</span>
-                <span className="inst-value">Savitribai Phule Pune University (SPPU)</span>
+                <span className="inst-value">SPPU (Pune University)</span>
               </div>
             </div>
 
@@ -91,20 +87,19 @@ export default function AboutAcademics() {
               </div>
 
               <p className="performance-disclaimer">
-                Year-wise academic evaluation scores across completed terms under SPPU curriculum.
+                Academic evaluation scores across completed terms under SPPU curriculum.
               </p>
             </div>
 
             {/* Relevant Coursework */}
             <div className="coursework-box">
-              <span className="coursework-label">RELEVANT COURSEWORK & LAB STUDIES:</span>
+              <span className="coursework-label">RELEVANT COURSEWORK & LABS:</span>
               <div className="coursework-tags">
-                <span className="mono-tag">Microcontrollers & Embedded Systems</span>
-                <span className="mono-tag">Control Systems Engineering</span>
-                <span className="mono-tag">Signals & Systems</span>
-                <span className="mono-tag">Digital Signal Processing</span>
-                <span className="mono-tag">Electronic Circuit Design</span>
-                <span className="mono-tag">Data Communication & Networks</span>
+                <span className="mono-tag">Embedded Systems</span>
+                <span className="mono-tag">Control Systems</span>
+                <span className="mono-tag">Signals & DSP</span>
+                <span className="mono-tag">Circuit Design</span>
+                <span className="mono-tag">Data Networks</span>
               </div>
             </div>
           </div>

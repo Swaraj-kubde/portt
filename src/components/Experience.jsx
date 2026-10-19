@@ -14,7 +14,7 @@ export default function Experience() {
           </div>
           <h2 className="section-title">Industry Experience & Contributions</h2>
           <p className="section-subtitle">
-            Hands-on engineering internship at CerebroSpark Innovation across UAV hardware integration, embedded software experiments, and field trials.
+            Engineering internship at CerebroSpark Innovation spanning UAV integration, embedded Linux systems, and field trials.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function Experience() {
           {/* Overview */}
           <div className="experience-overview">
             <p>
-              Hands-on internship focused on multirotor hardware assembly, embedded companion computer integration, and telemetry communications. Personal contributions are separated below into functional engineering areas, adhering strictly to technical accuracy and non-disclosure standards.
+              Hands-on internship focused on UAV hardware integration, companion computers, telemetry communications, and embedded software prototyping.
             </p>
           </div>
 
@@ -66,27 +66,23 @@ export default function Experience() {
               <ul className="sub-list">
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Autonomous drone research involving GPS-denied navigation on Linux-based embedded platforms.</span>
+                  <span>Autonomous drone research and GPS-denied navigation on embedded Linux.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Python/OpenCV computer-vision pipelines for navigation, object tracking, and perception.</span>
+                  <span>Python/OpenCV vision pipelines for target tracking and perception.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Raspberry Pi Zero 2 W and Raspberry Pi 5 integration for sensors, cameras, and embedded deployment.</span>
+                  <span>Raspberry Pi companion computer integration for sensors, cameras, and telemetry.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Participation in interceptor-drone development and testing involving real-time embedded processing.</span>
+                  <span>Distance sensor interfacing and real-time proximity-detection research.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Android-to-drone communication architecture for MAVLink telemetry and remote monitoring.</span>
-                </li>
-                <li>
-                  <span className="bullet-point">▸</span>
-                  <span>Embedded sensor integration, distance-data processing, and obstacle-detection research.</span>
+                  <span>Participation in interceptor-drone development and embedded testing.</span>
                 </li>
               </ul>
             </div>
@@ -100,15 +96,15 @@ export default function Experience() {
               <ul className="sub-list">
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Airframe & Electronics Assembly:</strong> Performed mechanical airframe assembly, motor mounting, and electronic speed controller (ESC) harness wiring for the Mamba product platform.</span>
+                  <span><strong>Airframe Assembly:</strong> Assembled airframes, motor mounts, and ESC harnesses for the Mamba platform.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Component Sourcing & Tracking:</strong> Assisted in sourcing electrical components, connectors, and airframe structural hardware according to project BOMs.</span>
+                  <span><strong>BOM Sourcing:</strong> Procured electronic components, connectors, and structural hardware.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Bench Testing & Debugging:</strong> Verified motor spin direction, calibrated ESCs, and systematically diagnosed power and wiring faults using digital multimeters.</span>
+                  <span><strong>Bench Diagnostics:</strong> Calibrated ESCs, verified motor rotation, and debugged power lines.</span>
                 </li>
               </ul>
             </div>
@@ -122,15 +118,15 @@ export default function Experience() {
               <ul className="sub-list">
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Mobile Interface Layout:</strong> Created an Android mobile application layout designed for clear readability of essential flight status indicators.</span>
+                  <span><strong>Mobile Interface:</strong> Built an Android layout for clear display of critical flight telemetry.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Telemetry Packet Parsing:</strong> Integrated MAVLink message ingestion to extract and display real-time drone parameters (attitude, battery voltage, flight mode) over USB-OTG/serial connection.</span>
+                  <span><strong>Telemetry Parsing:</strong> Integrated serial MAVLink ingestion for attitude, battery, and flight modes.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span><strong>Bench Link Verification:</strong> Validated data packet parsing using simulated and benchtop serial telemetry feeds in laboratory conditions.</span>
+                  <span><strong>Bench Verification:</strong> Validated packet parsing and screen updates using simulated feeds.</span>
                 </li>
               </ul>
             </div>
@@ -147,17 +143,17 @@ export default function Experience() {
               <ul className="sub-list">
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Participated in a three-person technical team comprising myself, my technical lead, and the company's co-founder/CTO in a demonstration of the drone platform's RF-jamming capabilities.</span>
+                  <span>Demonstrated platform RF-jamming capabilities on-site alongside the technical lead and CTO.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Collaborated directly on-site during operational trial demonstrations evaluating platform readiness and deployment operations.</span>
+                  <span>Assisted platform deployment, pre-flight readiness checks, and operational trials.</span>
                 </li>
               </ul>
               <div className="field-confidential-note">
                 <span className="confidential-note-label">CONFIDENTIALITY NOTE:</span>
                 <p>
-                  Technical parameters, RF specifications, frequencies, operational procedures, system schematics, and performance results are confidential and are not disclosed.
+                  Operational frequencies, schematics, and performance metrics are proprietary.
                 </p>
               </div>
             </div>
@@ -172,11 +168,11 @@ export default function Experience() {
               <ul className="sub-list">
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Led on-ground demonstration and public outreach coordination for the company during the Pandharpur Wari event.</span>
+                  <span>Coordinated on-ground flight demonstrations and public outreach during the Pandharpur Wari event.</span>
                 </li>
                 <li>
                   <span className="bullet-point">▸</span>
-                  <span>Managed team logistics, flight demonstration safety perimeters, and answered public questions regarding commercial and social drone applications.</span>
+                  <span>Managed flight demonstration perimeters, team logistics, and platform safety.</span>
                 </li>
               </ul>
             </div>

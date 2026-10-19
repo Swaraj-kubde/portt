@@ -14,32 +14,31 @@ export const PROJECTS_DATA = [
     gallery: [
       {
         src: '/images/quadcopter-front.jpg',
-        caption: 'Bench Testbed — Front Searchlight & Sensor Payload'
+        caption: 'Bench Testbed — Searchlight & Sensor Payload'
       },
       {
         src: '/images/quadcopter-top.jpg',
-        caption: 'Overhead View — Airframe Assembly, CrossFlight Autopilot & GPS Mast'
+        caption: 'Overhead View — Airframe, Autopilot & GPS Mast'
       }
     ],
     placeholderLabel: 'QUADCOPTER PLATFORM',
     placeholderSubtext: 'MULTIROTAR AIRFRAME & ARDUPILOT BENCH SETUP',
     summary:
-      'Independent hardware research platform built to explore multirotor assembly, ArduPilot flight controller configuration, electronic speed controller (ESC) calibration, and companion computer wiring.',
-    tags: ['ArduPilot', 'CrossFlight Autopilot', 'Mission Planner', 'MAVLink', 'Hardware Assembly', 'ESC Calibration'],
+      'Multirotor research platform built to evaluate airframe assembly, ArduPilot flight control, and companion computer integration. Configured motor calibration, sensor damping, and MAVLink telemetry with a Raspberry Pi companion board. Successfully verified pre-arm safety checks and sensor telemetry in bench testing.',
+    tags: ['ArduPilot', 'CrossFlight', 'Mission Planner', 'MAVLink', 'Hardware Assembly'],
     architecture: {
-      flightController: 'RadioLink CrossFlight autopilot running ArduPilot firmware with anti-vibration damping',
-      companionComputer: 'Raspberry Pi companion board connected via serial telemetry port',
-      groundStation: 'Mission Planner for parameter configuration, sensor calibration, and telemetry checks',
-      powerSetup: 'LiPo battery pack with regulated power module supplying autopilot and ESCs'
+      flightController: 'RadioLink CrossFlight autopilot running ArduPilot firmware with damping mount',
+      companionComputer: 'Raspberry Pi companion computer connected over serial telemetry',
+      groundStation: 'Mission Planner for parameter configuration, calibration, and checks',
+      powerSetup: 'LiPo battery with regulated power module supplying autopilot and ESCs'
     },
     keyHighlights: [
-      'Assembled mechanical quadcopter airframe, motor mounts, and power distribution wiring.',
-      'Conducted ESC calibration, motor rotation verification, and flight controller accelerometer/compass calibration in Mission Planner.',
-      'Configured serial telemetry link for communication with Raspberry Pi companion board over MAVLink.',
-      'Performed tethered motor spin-up tests and verified pre-arm safety checks.'
+      'Assembled mechanical airframe, power distribution harness, and vibration-damped autopilot mount.',
+      'Calibrated ESCs, compass, and IMU sensors in Mission Planner with motor direction verification.',
+      'Configured MAVLink serial telemetry communication with Raspberry Pi companion computer.'
     ],
     statusDetails:
-      'Hardware assembly, electronics wiring, and bench-level ArduPilot sensor calibrations completed; offboard autonomous flight validation remains an ongoing engineering step.'
+      'Airframe assembly, electronics wiring, and sensor calibrations verified on bench testbed.'
   },
   {
     id: 'android-ground-station',
@@ -63,32 +62,31 @@ export const PROJECTS_DATA = [
     gallery: [
       {
         src: '/images/groundstation-telemetry.jpg',
-        caption: 'ArduPilot Companion Telemetry HUD — Flight Mode STABILIZE, Attitude, Relative Altitude & Battery Health Monitor'
+        caption: 'Flight HUD — Attitude, Relative Altitude & Battery Monitor'
       },
       {
         src: '/images/groundstation-diagnostics.jpg',
-        caption: 'MAVLink Diagnostics & Message Console — Packet Counters (Heartbeat, Attitude, Battery) & EKF2 Sensor Stream'
+        caption: 'MAVLink Diagnostics — Packet Counters & EKF2 Sensor Stream'
       }
     ],
     placeholderLabel: 'GROUND STATION INTERFACE',
     placeholderSubtext: 'MOBILE TELEMETRY DISPLAY INTERFACE',
     summary:
-      'Personal project developing a mobile Android telemetry display interface to receive and visualize real-time drone flight parameters (attitude, battery voltage, flight mode) over a direct serial/telemetry link.',
-    tags: ['Android UI', 'MAVLink Packets', 'Serial / USB-OTG', 'Telemetry Display', 'Field Utility'],
+      'Mobile telemetry display developed to monitor drone flight parameters over direct serial/USB-OTG links. Ingests and parses MAVLink packets to present attitude, battery status, and flight modes in a clean HUD. Validated data parsing and display refresh rates using bench telemetry feeds.',
+    tags: ['Android UI', 'MAVLink', 'USB-OTG Serial', 'Telemetry HUD'],
     architecture: {
       platform: 'Android application interface',
-      telemetrySource: 'MAVLink packet stream received via USB-OTG serial transceiver link',
-      displayParameters: 'Attitude (pitch/roll), battery voltage, armed status, and current flight mode',
-      designFocus: 'High-contrast clean layout for practical readability during field testing'
+      telemetrySource: 'MAVLink packet stream via USB-OTG serial transceiver link',
+      displayParameters: 'Attitude (pitch/roll), battery voltage, armed state, flight mode',
+      designFocus: 'High-contrast clean layout for field testing readability'
     },
     keyHighlights: [
-      'Developed mobile user interface screens tailored for viewing essential UAV status metrics.',
-      'Integrated MAVLink message handling to parse incoming HEARTBEAT, ATTITUDE, and SYS_STATUS packets.',
-      'Tested data flow and screen updates using simulated telemetry streams in the laboratory.',
-      'Focused contribution on layout design, UI responsiveness, and serial data presentation.'
+      'Designed high-contrast Android HUD and diagnostics console for field readability.',
+      'Implemented serial MAVLink parser for HEARTBEAT, ATTITUDE, and SYS_STATUS packets.',
+      'Verified telemetry ingestion and data rendering with benchtop serial streams.'
     ],
     statusDetails:
-      'Core UI layout and telemetry packet reception demonstrated in lab conditions; further UI refinements and field validation ongoing.'
+      'UI layout and real-time telemetry packet parsing validated under bench simulation.'
   },
   {
     id: 'self-balancing-robot',
@@ -100,28 +98,27 @@ export const PROJECTS_DATA = [
     gallery: [
       {
         src: '/images/self-balancing-robot.png',
-        caption: 'Hardware Prototype — Two-Wheel Inverted Pendulum Chassis with Arduino Uno & MPU-6050 IMU'
+        caption: 'Two-Wheel Inverted Pendulum Chassis with Arduino Uno & MPU-6050'
       }
     ],
     placeholderLabel: 'SELF-BALANCING ROBOT',
     placeholderSubtext: 'TWO-WHEEL BALANCING RIG & PID FEEDBACK',
     summary:
-      'Two-wheeled inverted pendulum robotic vehicle utilizing an Arduino microcontroller, MPU6050 6-axis IMU, and closed-loop PID control algorithm for balance stabilization.',
-    tags: ['Arduino', 'MPU6050 (IMU)', 'PID Control', 'Complementary Filter', 'DC Gear Motors', 'L298N Driver'],
+      'Two-wheeled inverted pendulum robot built to study closed-loop feedback control and sensor fusion. Combines an MPU6050 IMU with a complementary filter and real-time PID algorithm to drive DC gear motors. Achieved dynamic balance stabilization and disturbance recovery on flat surfaces.',
+    tags: ['Arduino', 'MPU6050', 'PID Control', 'Complementary Filter', 'L298N Driver'],
     architecture: {
       microcontroller: 'Arduino Uno executing real-time PID control loop',
-      sensor: 'MPU6050 6-axis IMU (Gyroscope + Accelerometer) communicating over I2C',
-      actuation: 'DC gear motors driven by L298N dual H-Bridge motor driver module',
-      sensorFusion: 'Complementary filter combining accelerometer tilt angle and gyroscope angular velocity'
+      sensor: 'MPU6050 6-axis IMU communicating over I2C',
+      actuation: 'DC gear motors driven by L298N dual H-Bridge module',
+      sensorFusion: 'Complementary filter combining accelerometer and gyroscope inputs'
     },
     keyHighlights: [
-      'Implemented complementary filter to compute pitch angle from raw accelerometer and gyroscope readings.',
-      'Programmed closed-loop PID algorithm to calculate motor compensation PWM outputs.',
-      'Experimentally tuned proportional, integral, and derivative gains to achieve upright balance recovery.',
-      'Constructed mechanical two-wheel chassis with centered battery and electronics placement.'
+      'Implemented complementary filter combining accelerometer angle and gyro angular velocity.',
+      'Programmed real-time PID algorithm to calculate motor compensation PWM outputs.',
+      'Tuned PID gains experimentally to achieve balance recovery and chassis stability.'
     ],
     statusDetails:
-      'Hardware construction and stationary balancing demonstrated on flat laboratory surfaces.'
+      'Mechanical assembly, sensor fusion, and stationary balancing verified in laboratory tests.'
   }
 ];
 
@@ -141,7 +138,7 @@ export default function Projects() {
             Featured Engineering Projects
           </h2>
           <p className="section-subtitle">
-            Personal and academic robotic platforms, UAV hardware setups, and mobile telemetry interfaces. Documented with empirical honesty, clearly distinguishing bench testing from live autonomous flight.
+            Robotic platforms, UAV testbeds, and mobile telemetry interfaces documented with empirical bench and hardware testing.
           </p>
         </div>
 

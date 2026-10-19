@@ -113,7 +113,7 @@ export default function Footer() {
           <div className="footer-col">
             <span className="footer-col-title">SYSTEM ARCHITECTURE</span>
             <p className="footer-meta-text">
-              Engineered with a lightweight React stack, custom Vanilla CSS tokens, semantic HTML5, and strict dark mode aesthetics. No third-party template bloat or artificial metrics.
+              Engineered with React, Vanilla CSS design tokens, semantic HTML5, and responsive dark theme.
             </p>
             <span className="mono-subtext" style={{ marginTop: '8px', display: 'block' }}>
               STABLE BUILD: v1.0.0
